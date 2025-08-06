@@ -11,9 +11,9 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
-        const menuCaption = `╭━━━〔 *${config.TANJIRO-MD}* 〕━━━┈⊷
+        const menuCaption = `╭━━━〔 *${config.TANJIRO_MD}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ 👑 Owner : *${config.ᗪ卂爪丨†}*
+┃★│ 👑 Owner : *${config.DAMI_X}*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 📋 *ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ᴛᴏ ᴇxᴘʟᴏʀᴇ:*
