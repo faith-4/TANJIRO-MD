@@ -1,12 +1,12 @@
 {
-  "name": "Tanjiro-Md",
+  "name": "Tanjiro-md",
   "version": "4.5.0",
-  "description": "A WhatsApp Bot Created By Daminī",
+  "description": "A WhatsApp Bot Created By Damini Official",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Tanjiro-Md",
-    "stop": "pm2 stop Tanjiro-Md",
-    "restart": "pm2 restart Tanjiro-Md"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Tanjiro-md",
+    "stop": "pm2 stop Tanjiro-md",
+    "restart": "pm2 restart Tanjiro-md"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "npm:baileys-pro@latest",
