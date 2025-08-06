@@ -13,7 +13,7 @@ cmd({
     try {
         const menuCaption = `╭━━━〔 *${config.TANJIRO_MD}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ 👑 Owner : *${config.DAMI_X}*
+┃★│ 👑 Owner : *${config.OWNER_NAME}*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 📋 *ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ᴛᴏ ᴇxᴘʟᴏʀᴇ:*
@@ -51,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        video: { url: config.MENU_VIDEO_URL || 'https://files.catbox.moe/wzdxwt.mp4' },
+                        video: { url: config.MENU_VIDEO_URL || 'https://files.catbox.moe/nl99hq.mp4' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -71,7 +71,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/kvy0jr.mp3' },
+                    audio: { url: 'https://files.catbox.moe/s7689r.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
