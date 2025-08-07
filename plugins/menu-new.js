@@ -39,7 +39,7 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363377534493877@newsletter',
+                newsletterJid: '120363348739987203@newsletter',
                 newsletterName: config.OWNER_NAME,
                 serverMessageId: 143
             }
@@ -51,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        video: { url: config.MENU_VIDEO_URL || 'https://files.catbox.moe/nl99hq.mp4' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -71,7 +71,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/dxj2t5.mp3' },
+                    audio: { url: 'https://files.catbox.moe/wzodz1.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
