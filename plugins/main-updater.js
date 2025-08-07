@@ -16,24 +16,24 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for Arslan_MD updates...");
+        await reply("🔍 Checking for TANJIRO_MD updates...");
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/Arslan-MD/Arslan_MD/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/Nerdk-tech/TANJIRO_MD/commits/main");
         const latestCommitHash = commitData.sha;
 
         // Get the stored commit hash from the database
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your 𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃 bot is already up-to-date! BY ArslanMD Official");
+            return reply("✅ Your TANJIRO_𝐌𝐃 bot is already up-to-date! BY Damini Official");
         }
 
-        await reply("🚀 Updating 𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃 Bot...");
+        await reply("🚀 Updating TANJIRO_𝐌𝐃 Bot...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/Arslan-MD/Arslan_MD/archive/main.zip", { responseType: "arraybuffer" });
+        const { data: zipData } = await axios.get("https://github.com/Nerdk-tech/TANJIRO_MD/archive/main.zip", { responseType: "arraybuffer" });
         fs.writeFileSync(zipPath, zipData);
 
         // Extract ZIP file
